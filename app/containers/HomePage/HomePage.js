@@ -45,20 +45,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
             </p>
           </section>
           <section>
-            <h2>Try me!</h2>
-            <form onSubmit={onSubmitForm}>
-              <label htmlFor="username">
-                Show Github repositories by
-                <span className="at-prefix">@</span>
-                <input
-                  id="username"
-                  type="text"
-                  placeholder="flexdinesh"
-                  value={username}
-                  onChange={onChangeUsername}
-                />
-              </label>
-            </form>
+             
             <ReposList {...reposListProps} />
           </section>
         </div>
